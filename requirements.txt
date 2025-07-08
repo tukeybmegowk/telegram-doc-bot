@@ -1,4 +1,4 @@
 python-telegram-bot==20.8
-docxtpl==0.16.9
+docxtpl==0.16.8
 docx2pdf==0.1.8
 python-docx==0.8.11
