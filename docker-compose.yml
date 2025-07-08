@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  bot:
+    build: .
+    container_name: telegram-docgen-bot
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./template.docx:/app/template.docx:ro
