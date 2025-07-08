@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: telegram-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python telegram_bot_webhook.py"
+    autoDeploy: true
+    envVars:
+      - key: TOKEN
+        sync: false   # задайте в панели Render
+      - key: WEBHOOK_URL
+        sync: false   # https://YOUR-SERVICE.onrender.com
